@@ -24,8 +24,9 @@ public class FibononacciSequence {
 			System.out.println("Please enter a number which represents a position within Fibononacci Sequence.");
 			userInput= scnr.nextLine();
 			x = Integer.parseInt(userInput);
-			
-			if(x!=-1) {
+			if(x<=-2)
+				System.out.println("User Input Error: Please enter a number greater than 0.\n");
+			else if(x!=-1) {
 				System.out.println("The "+x+" term of the Fibonacci sequence is " + rFibFun(x)+"\n");
 			}else {
 				System.out.println("Exiting Fibononacci Sequence.");
